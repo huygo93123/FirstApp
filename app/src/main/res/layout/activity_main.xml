@@ -8,4 +8,43 @@
 
     tools:context="huydk.firstapp.MainActivity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bạn muốn chọn ảnh nào" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radHinh1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Hinh1" />
+
+        <RadioButton
+            android:id="@+id/radHinh2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hinh2" />
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/btnThoat"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="right"
+        app:srcCompat="@drawable/exit" />
+
+    <ImageView
+        android:id="@+id/imgHinh"
+        android:layout_width="247dp"
+        android:layout_height="300dp"
+        app:srcCompat="@drawable/ellemanvn" />
+
+
 </LinearLayout>
