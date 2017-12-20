@@ -4,8 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
 
+    android:orientation="vertical"
     tools:context="huydk.firstapp.MainActivity">
 
+    <ListView
+        android:id="@+id/lvContact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </LinearLayout>
