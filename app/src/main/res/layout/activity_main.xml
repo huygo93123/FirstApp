@@ -8,4 +8,8 @@
 
     tools:context="huydk.firstapp.MainActivity">
 
+    <ListView
+        android:id="@+id/lvThu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </LinearLayout>
