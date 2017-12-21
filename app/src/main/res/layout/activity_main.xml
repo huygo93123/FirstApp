@@ -8,4 +8,14 @@
 
     tools:context="huydk.firstapp.MainActivity">
 
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btvPrint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Print" />
 </LinearLayout>
