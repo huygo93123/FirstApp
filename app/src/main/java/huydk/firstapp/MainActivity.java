@@ -8,9 +8,11 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import huydk.adapter.CustomListAdapter;
+
 public class MainActivity extends AppCompatActivity {
 
-    ListView listView;
+    ListView list;
 
     String[] itemname = {
         "Safari",
@@ -23,19 +25,36 @@ public class MainActivity extends AppCompatActivity {
         "Cold War",
     };
 
+    Integer[] imgid = {
+      R.drawable.h1,
+      R.drawable.h2,
+      R.drawable.h4,
+      R.drawable.h5,
+      R.drawable.h6,
+      R.drawable.h7,
+      R.drawable.h8,
+      R.drawable.h8,
+      R.drawable.h10,
+      R.drawable.h11,
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        listView = findViewById(R.id.lstView);
-        listView.setAdapter(new ArrayAdapter<String>(MainActivity.this,R.layout.mylist,R.id.Itemname,itemname));
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        CustomListAdapter adapter = new CustomListAdapter(MainActivity.this,itemname,imgid);
+        list = findViewById(R.id.list);
+        list.setAdapter(adapter);
+
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(MainActivity.this, itemname[i], Toast.LENGTH_SHORT).show();
+                String Selecteditem = itemname[+i];
+                Toast.makeText(MainActivity.this,Selecteditem,Toast.LENGTH_SHORT).show();
             }
         });
+
     }
 
 }
