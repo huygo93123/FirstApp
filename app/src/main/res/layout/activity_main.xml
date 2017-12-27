@@ -7,5 +7,22 @@
     android:orientation="vertical"
 
     tools:context="huydk.firstapp.MainActivity">
+<TextView
+    android:id="@+id/tvMsg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1F8" />
+    
+    <GridView
+        android:id="@+id/gridView1"
+        android:numColumns="auto_fit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:background="#CF8E72"
+        ></GridView>
 
 </LinearLayout>
