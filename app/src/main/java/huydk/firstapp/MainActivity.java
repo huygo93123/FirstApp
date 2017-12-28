@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         setContentView(R.layout.activity_main);
         tvMsg = (TextView) findViewById(R.id.tvMsg);
 
-        mThumbIds = new Integer[]{R.drawable.h1,R.drawable.h3};
+        mThumbIds = new Integer[]{R.drawable.h1,R.drawable.ellemanvn};
         gv = findViewById(R.id.gridView1);
         adapter = new MyImageAdapter(this,mThumbIds);
         gv.setAdapter(adapter);
